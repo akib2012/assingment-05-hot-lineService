@@ -87,7 +87,7 @@ This Section will have layout as figma
 ### 5. Call Buttons
 
 - On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
+  - Show an **alert** with a message including the service name and number ✔
   - Each call will **cut 20 coins**. Reduce Coin after each click.
   - If coins are less than 20, show a relevant alert and terminate the process.
   - Add this service into the **Call History section** with:
