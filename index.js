@@ -38,7 +38,7 @@ for (let callBtn of callBtns) {
             const cardTitle = callBtn.parentNode.parentNode.children[2].innerText;
             const hotLIneNumber = callBtn.parentNode.parentNode.children[3].innerText;
             // console.log(cardTitle);
-            const historyId = getId("history-id");
+            const historyId = getId("clear-div");
             const divCreate = document.createElement("div");
             const newDiv = historyId.appendChild(divCreate);
             
@@ -65,8 +65,22 @@ for (let callBtn of callBtns) {
                 alert(`❌You don’t have enough coins. A minimum of 20 coins is required to make a call.`);
 
             }
+
+
         }
     )
 }
 
+
+/// clear all history from aside ver!!
+
+
+getId("clear-btn").addEventListener("click",
+    function(){
+        document.getElementById("clear-btn").parentNode.parentNode.children[1].innerHTML = "";
+        
+        
+
+    }
+)
 
