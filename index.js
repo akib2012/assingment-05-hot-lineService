@@ -37,7 +37,7 @@ for (let callBtn of callBtns) {
             const heading = callBtn.parentNode.parentNode.children[1].innerText;
             const cardTitle = callBtn.parentNode.parentNode.children[2].innerText;
             const hotLIneNumber = callBtn.parentNode.parentNode.children[3].innerText;
-            // console.log(cardTitle);
+            
             const historyId = getId("clear-div");
             const divCreate = document.createElement("div");
             const newDiv = historyId.appendChild(divCreate);
@@ -83,4 +83,20 @@ getId("clear-btn").addEventListener("click",
 
     }
 )
+
+
+/// copy button functionality here
+
+const copyBtns = document.getElementsByClassName("copy");
+for(let copyBtn of copyBtns){
+    copyBtn.addEventListener("click",
+        function(){
+           let copyCount = getId("copy-item").innerText;
+           copyCount = Number(copyCount) + 1;
+
+           document.getElementById("copy-item").innerText = copyCount;
+        }
+    )
+}
+
 

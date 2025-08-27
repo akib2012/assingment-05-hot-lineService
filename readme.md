@@ -120,7 +120,7 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 
 ## 🧪 Challenges Part (10 Marks)
 
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
+- On clicking the **Copy button**, show an alert and **   the copy count** (3 Marks)
 
 - Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
 
