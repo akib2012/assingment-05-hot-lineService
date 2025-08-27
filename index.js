@@ -104,16 +104,20 @@ for (let copyBtn of copyBtns) {
 
             document.getElementById("copy-item").innerText = copyCount;
 
+
+            // copy button perform here copy txt 
             const crdTitle = copyBtn.parentNode.parentNode.children[2].innerText;
 
-            navigator.clipboard.writeText(crdTitle)
-                .then(() => {
-                    alert(`"${crdTitle}" copied successfully!`);
-                })
-                .catch(err => {
-                    console.error("Failed to copy!", err);
-                });
+            const tempInput = document.createElement("input");
+            tempInput.value = crdTitle;
+            document.body.appendChild(tempInput);
 
+            tempInput.select();
+            document.execCommand("copy");
+
+            document.body.removeChild(tempInput);
+
+            alert(`"${crdTitle}" copied successfully!`);
 
 
         }
