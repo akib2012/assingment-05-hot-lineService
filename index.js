@@ -106,7 +106,7 @@ for (let copyBtn of copyBtns) {
 
 
             // copy button perform here copy txt 
-            const crdTitle = copyBtn.parentNode.parentNode.children[2].innerText;
+            const crdTitle = copyBtn.parentNode.parentNode.children[3].innerText;
 
             const tempInput = document.createElement("input");
             tempInput.value = crdTitle;
